@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>teste</title>
+    <meta charset="UTF-8" />
+    <script type="text/javascript">
+        function gravar(){
+            var titulo = document.getElementById("txtTitulo").value;
+            var subtitulo = document.getElementById("txtSubtitulo").value;
+            var div = document.getElementById("divResultado");
+             
+            div.innerText = "<h1>" + titulo +"</h1>"+ "\n" + subtitulo;
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <label>Título:</label>
+        <input type="text" id="txtTitulo"/>
+        <label>Subtítulo:</label>
+        <input type="text" id="txtSubtitulo"/>
+        <button id="btnEnviar" onclick="gravar()" >Gravar</button>
+    </div>
+    <div id="divResultado">
+    </div>
+</body>
+</html>
